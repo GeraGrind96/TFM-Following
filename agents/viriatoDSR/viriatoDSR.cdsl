@@ -1,0 +1,22 @@
+import "CameraRGBDSimple.idsl";
+import "Laser.idsl";
+import "OmniRobot.idsl";
+import "CoppeliaUtils.idsl";
+import "JointMotorSimple.idsl";
+import "FullPoseEstimation.idsl";
+import "DifferentialRobot.idsl";
+import "Laser.idsl";
+import "RealSenseFaceID.idsl";
+import "CameraSimple.idsl";
+
+Component viriatoDSR
+{
+    Communications
+    {
+        requires CameraRGBDSimple, DifferentialRobot, Laser, OmniRobot, CoppeliaUtils, JointMotorSimple, FullPoseEstimation, CameraSimple, RealSenseFaceID, Laser;
+    };
+    language Cpp11;
+    gui Qt(QMainWindow);
+    options dsr;
+};
+

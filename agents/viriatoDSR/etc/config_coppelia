@@ -1,0 +1,29 @@
+CommonBehavior.Endpoints=tcp -p 10000
+
+# Proxies for required interfaces
+CameraRGBDSimpleProxy = camerargbdsimple:tcp -h localhost -p 10096
+CameraSimpleProxy = camerasimple:tcp -h localhost -p 10005
+CoppeliaUtilsProxy = coppeliautils:tcp -h localhost -p 10666
+DifferentialRobotProxy = differentialrobot:tcp -h localhost -p 10004
+FullPoseEstimationProxy = fullposeestimation:tcp -h localhost -p 10016
+JointMotorSimpleProxy = jointmotorsimple:tcp -h localhost -p 17193
+LaserProxy = laser:tcp -h localhost -p 10003
+Laser1Proxy = laser:tcp -h localhost -p 10003
+OmniRobotProxy = omnirobot:tcp -h localhost -p 0
+RealSenseFaceIDProxy = realsensefaceid:tcp -h localhost -p 0
+
+
+agent_id = 0 # Change id
+agent_name = viriatoDSR
+tree_view = true
+graph_view = true
+2d_view = true
+3d_view = true
+#Ice.MessageSizeMax=20004800
+
+InnerModelPath = innermodel.xml
+
+Ice.Warn.Connections=0
+Ice.Trace.Network=0
+Ice.Trace.Protocol=0
+Ice.MessageSizeMax=20004800
