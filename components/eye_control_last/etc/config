@@ -1,0 +1,18 @@
+# Endpoints for implements interfaces
+EyeControl.Endpoints=tcp -p 12533
+
+# Proxies for required interfaces
+HumanCameraBodyProxy = humancamerabody:tcp -h localhost -p 14213
+JointMotorSimpleProxy = jointmotorsimple:tcp -h localhost -p 16034
+
+
+
+
+
+Ice.Warn.Connections=0
+Ice.Trace.Network=0
+Ice.Trace.Protocol=0
+Ice.MessageSizeMax=20004800
+
+
+

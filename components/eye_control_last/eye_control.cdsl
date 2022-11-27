@@ -1,0 +1,14 @@
+import "JointMotorSimple.idsl";
+import "HumanCameraBody.idsl";
+import "EyeControl.idsl";
+
+Component eye_control
+{
+    Communications
+    {
+    	implements EyeControl;
+        requires JointMotorSimple, HumanCameraBody;
+    };
+    language python;
+};
+
